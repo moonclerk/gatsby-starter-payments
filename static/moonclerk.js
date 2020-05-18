@@ -1,19 +1,14 @@
-var mc9t452zz7z
+var mc5exp0qlk2y40
 ;(function (d, t) {
   var s = d.createElement(t),
-    opts = {
-      checkoutToken: "9t452zz7z",
-      width: "100%",
-      host: "staging.moonclerk.com",
-      ssl: true,
-    }
-  s.src = "https://d4m3xhfao1kky.cloudfront.net/assets/embed.js"
+    opts = { checkoutToken: "5exp0qlk2y40", width: "100%" }
+  s.src = "https://d2l7e0y6ygya2s.cloudfront.net/assets/embed.js"
   s.onload = s.onreadystatechange = function () {
     var rs = this.readyState
     if (rs) if (rs != "complete") if (rs != "loaded") return
     try {
-      mc9t452zz7z = new MoonclerkEmbed(opts)
-      mc9t452zz7z.display()
+      mc5exp0qlk2y40 = new MoonclerkEmbed(opts)
+      mc5exp0qlk2y40.display()
     } catch (e) {}
   }
   var scr = d.getElementsByTagName(t)[0]
