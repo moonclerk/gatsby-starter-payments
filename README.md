@@ -1,26 +1,31 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+![Header](https://res.cloudinary.com/moonclerk/image/upload/v1589814003/git-header_njliva.jpg)
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+# gatsby-starter-moonclerk
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+A Gatsby starter for creating SaS landing pages using MoonClerk to accept payments. Easily create lightning fast static landing pages for your ideas. This Gatsby starter
 
-## 🚀 Quick start
+## ✨ Features
+
+- SEO optimized
+- Fully responsive
+- Gatsby images
+- MoonClerk Payment Forms
+- Open source illustrations from Icons8
+- Google Analytics
+- Includes React Helmet to allow editing site meta tags
+- Includes plugins for easy, beautiful typography
+- Styling with styled-components
+- Organized using ABEM
+
+## ⚡️ Getting Started
 
 1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    Use the Gatsby CLI to create a new site, specifying the blog starter.
 
     ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    # create a new Gatsby site using the blog starter
+    gatsby new gatsby-starter-moonclerk https://github.com/moonclerk/gatsby-starter-moonclerk
     ```
 
 1.  **Start developing.**
@@ -28,7 +33,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-default-starter/
+    cd gatsby-starter-moonclerk/
     gatsby develop
     ```
 
@@ -38,7 +43,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Open the `gatsby-starter-moonclerk` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 ## 🧐 What's inside?
 
@@ -74,7 +79,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+9.  **`LICENSE`**: Gatsby and this starter are licensed under the MIT license.
 
 10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
@@ -82,18 +87,42 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
-## 🎓 Learning Gatsby
+## 🔧 Configure
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+### MoonClerk Forms
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+1. Create a [MoonClerk](https://www.moonclerk.com/) account if you don't have one:
+2. Authenticate your account with stripe
+3. Create a form in MoonClerk and copy embed code
+4. Open _`/src/components/molecules/sectionCheckout.js`_
+5. Take id from embed code and paste it here: _`<Form id="your-id-here"></Form>`_
+6. Open _`/static/moonclerk.js`_
+7. Paste the script from the embed code and save the file
+8. Run **`gatsby build && gatsby serve`** \*currently gatsby does not fire static scripts in gatsby develop, there's a few issue requests that are asking for this to be resolved.
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+## 🚀 Deploy
 
-## 💫 Deploy
+[![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/moonclerk/gatsby-starter-moonclerk)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+The quickest way to try it out is by running it on a pre-configured starter site with Netlify. After clicking that button, you’ll authenticate with GitHub and choose a repository name. Netlify will then automatically create a repository in your GitHub account with a copy of the files from this starter. Next, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete.
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
+### Manual Deploy
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+Read this guide by Netlify on using Netlify and Gatsby together. [A Step-by-Step Guide: Gatsby on Netlify](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/)
+
+1. Create a git repo
+2. Create a [Netlify](https://www.netlify.com/) account
+3. Link your repository in Netlify
+4. Authorize Netlify
+5. Choose your repository
+6. Configure your settings
+7. Build your site
+8. Done
+
+## 💡 Contributions
+
+PRs are welcome! Consider contributing to this project if you are missing feature that is also useful for others.
+
+# Copyright & License
+
+Copyright (c) 2020 [MoonClerk](https://moonclerk.com) - Released under the [MIT license](LICENSE).
