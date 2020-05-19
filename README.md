@@ -2,7 +2,7 @@
 
 # gatsby-starter-moonclerk
 
-A Gatsby starter for creating SaS landing pages using MoonClerk to accept payments. Easily create lightning fast static landing pages for your ideas. This Gatsby starter
+A Gatsby starter for creating SaaS landing pages using MoonClerk to accept payments. Easily create lightning fast static landing pages for your ideas. This Gatsby starter
 
 ## ✨ Features
 

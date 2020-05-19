@@ -1,13 +1,23 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState, useRef } from "react"
+import { withPrefix } from "gatsby"
 import styled from "styled-components"
 import Seperator from "@assets/seperators/a-seperator-4.svg"
 import Container from "@atoms/container"
-import Subheading from "@atoms/subheading"
 import SliderTestimonials from "@molecules/sliderTestimonials"
 import { media } from "@utils/media"
 
 const SectionCheckout = () => {
-  useEffect(() => {})
+  const [loaded, setLoaded] = useState(false)
+  const scriptEl = useRef(null)
+
+  // only add moonclerk.js when component mounts
+  useEffect(() => {
+    const checkoutScript = document.createElement("script")
+    checkoutScript.id = "checkoutScript"
+    checkoutScript.src = withPrefix("/moonclerk.js")
+    scriptEl.current.appendChild(checkoutScript)
+    setLoaded(true)
+  }, [])
 
   return (
     <Container content>
@@ -22,10 +32,8 @@ const SectionCheckout = () => {
           <Seperator />
           <SliderTestimonials />
         </Content>
-        {/* PASTE MOONCLERK FORM HTML HERE */}
-        <Form id="mc5exp0qlk2y40">
-          <script src="/moonclerk.js" />
-        </Form>
+        {/* PASTE MOONCLERK FORM HTML ID HERE */}
+        <Form id="mc5exp0qlk2y40" ref={scriptEl} />
       </CheckoutContainer>
     </Container>
   )

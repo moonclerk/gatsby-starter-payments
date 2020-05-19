@@ -1,7 +1,7 @@
 {
   "name": "gatsby-starter-moonclerk",
   "private": false,
-  "description": "A simple starter to get up setup",
+  "description": "A simple starter to get up setup creating SaaS landing pages",
   "version": "0.1.0",
   "author": "Lee Campbell <lee@moonclerk.com>",
   "dependencies": {
@@ -46,9 +46,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/moonclerk/gatsby-starter-moonclerk"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/moonclerk/gatsby-starter-moonclerk/issues"
   }
 }
