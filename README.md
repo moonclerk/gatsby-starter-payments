@@ -1,6 +1,6 @@
 ![Header](https://res.cloudinary.com/moonclerk/image/upload/v1589814003/git-header_njliva.jpg)
 
-# gatsby-starter-moonclerk-payments
+# gatsby-starter-payments
 
 A Gatsby starter for creating SaaS landing pages using MoonClerk to accept payments. Easily create lightning fast static landing pages that accept payments and look good.
 
@@ -25,7 +25,7 @@ A Gatsby starter for creating SaaS landing pages using MoonClerk to accept payme
 
     ```shell
     # create a new Gatsby site using the blog starter
-    gatsby new gatsby-starter-moonclerk-payments https://github.com/moonclerk/gatsby-starter-moonclerk-payments
+    gatsby new gatsby-starter-payments https://github.com/moonclerk/gatsby-starter-payments
     ```
 
 1.  **Start developing.**
@@ -33,7 +33,7 @@ A Gatsby starter for creating SaaS landing pages using MoonClerk to accept payme
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd gatsby-starter-moonclerk-payments/
+    cd gatsby-starter-payments/
     gatsby develop
     ```
 
@@ -43,7 +43,7 @@ A Gatsby starter for creating SaaS landing pages using MoonClerk to accept payme
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `gatsby-starter-moonclerk-payments` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Open the `gatsby-starter-payments` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 ## 🧐 What's inside?
 
@@ -102,7 +102,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 ## 🚀 Deploy
 
-[![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/moonclerk/gatsby-starter-moonclerk-payments)
+[![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/moonclerk/gatsby-starter-payments)
 
 The quickest way to try it out is by running it on a pre-configured starter site with Netlify. After clicking that button, you’ll authenticate with GitHub and choose a repository name. Netlify will then automatically create a repository in your GitHub account with a copy of the files from this starter. Next, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete.
 
