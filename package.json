@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-moonclerk",
+  "name": "gatsby-starter-moonclerk-payments",
   "private": false,
   "description": "A Gatsby starter for creating SaaS landing pages using MoonClerk to accept payments.",
   "version": "0.1.0",
@@ -47,9 +47,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/moonclerk/gatsby-starter-moonclerk"
+    "url": "https://github.com/moonclerk/gatsby-starter-moonclerk-payments"
   },
   "bugs": {
-    "url": "https://github.com/moonclerk/gatsby-starter-moonclerk/issues"
+    "url": "https://github.com/moonclerk/gatsby-starter-moonclerk-payments/issues"
   }
 }
